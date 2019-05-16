@@ -1,9 +1,0 @@
-const { EventHubClient, EventPosition } = require('@azure/event-hubs');
-EVENTHUB_CONNECTION_STRING="Endpoint=sb://srramstreaminghubns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=JAZlFaFEeTIGjfYWbZAq+xsI3kewglpAFjVx5kHG5KE=";
-EVENTHUB_NAME="streamiotdata";
-const client = EventHubClient.createFromConnectionString(EVENTHUB_CONNECTION_STRING,EVENTHUB_NAME);
-"@azure/event-hubs": "^1.0.8"
-const delivery = await client.send(eventData);
-
-{"body":{"humidity":53.948974609375,"temperatureFromHumidity":26.6888427734375,"objectTemperature":19.9375,"temperatureFromIr":26.625,"pressure":990.41,"lux":216.32,"currentTime":"2019-05-16T23:26:19.772Z"},"partitionKey":"pk12345"}
-
