@@ -7,7 +7,7 @@ var Protocol = require('azure-iot-device-amqp').Amqp;
 
 
 const { EventHubClient, EventPosition } = require('@azure/event-hubs');
-const EVENTHUB_CONNECTION_STRING="Endpoint=sb://srramstreaminghubns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=JAZlFaFEeTIGjfYWbZAq+xsI3kewglpAFjVx5kHG5KE=";
+const EVENTHUB_CONNECTION_STRING="Endpoint=sb://xxxxxxxxxx.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=+=";
 const EVENTHUB_NAME="streamiotdata";
 const client = EventHubClient.createFromConnectionString(EVENTHUB_CONNECTION_STRING,EVENTHUB_NAME);
 
