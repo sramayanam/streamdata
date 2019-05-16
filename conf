@@ -1,0 +1,3 @@
+EVENTHUB_CONNECTION_STRING="Endpoint=sb://srramstreaminghubns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=JAZlFaFEeTIGjfYWbZAq+xsI3kewglpAFjVx5kHG5KE="
+
+EVENTHUB_NAME="srramstream1"
