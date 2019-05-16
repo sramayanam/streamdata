@@ -1,3 +1,6 @@
-EVENTHUB_CONNECTION_STRING="Endpoint=sb://srramstreaminghubns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=JAZlFaFEeTIGjfYWbZAq+xsI3kewglpAFjVx5kHG5KE="
-
-EVENTHUB_NAME="srramstream1"
+const { EventHubClient, EventPosition } = require('@azure/event-hubs');
+EVENTHUB_CONNECTION_STRING="Endpoint=sb://srramstreaminghubns.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=JAZlFaFEeTIGjfYWbZAq+xsI3kewglpAFjVx5kHG5KE=";
+EVENTHUB_NAME="streamiotdata";
+const client = EventHubClient.createFromConnectionString(EVENTHUB_CONNECTION_STRING,EVENTHUB_NAME);
+"@azure/event-hubs": "^1.0.8"
+const delivery = await client.send(eventData);
