@@ -7,7 +7,7 @@ var Protocol = require('azure-iot-device-amqp').Amqp;
 var Client = require('azure-iot-device').Client;
 var ConnectionString = require('azure-iot-device').ConnectionString;
 var Message = require('azure-iot-device').Message;
-var connectionString = 'HostName=scrdataaidays.azure-devices.net;DeviceId=bluetoothdevices;SharedAccessKey=6VStArHKJQo7KvnlpS0XQtedYL1IhpAcEmXB/ptr/6k=';
+var connectionString = 'HostName=xxxxxx.azure-devices.net;DeviceId=bluetoothdevices;SharedAccessKey=/ptr/6k=';
 
 var deviceId = ConnectionString.parse(connectionString).DeviceId;
 
